@@ -55,7 +55,7 @@ python test/emulator.py diorite --fresh
 
 Declared targets: Basalt, Chalk, Diorite, Emery, Flint, and Gabbro. This package
 is a watchapp, with button input and no background clock loop. It does not target
-the original Aplite watches. The store listing has not been published.
+the original Aplite watches. [Version 0.2.0 is on the Pebble Appstore](https://apps.repebble.com/cadd533080f245c4b7bd8b4a).
 
 `reference/cards.json` pins the complete supplied text. `reference/art/` holds
 the 78 original snapshots. `reference/sources.json` records their hashes and
