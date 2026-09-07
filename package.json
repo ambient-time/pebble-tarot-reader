@@ -1,7 +1,7 @@
 {
   "name": "tarot-reader",
   "author": "Luke Steuber",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "keywords": [
     "pebble-app"
@@ -40,6 +40,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_0",
+          "file": "data/detail-0.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_0",
           "file": "data/text-0.bin"
         },
@@ -47,6 +52,11 @@
           "type": "raw",
           "name": "ART_1",
           "file": "data/art-1.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_1",
+          "file": "data/detail-1.bin"
         },
         {
           "type": "raw",
@@ -60,6 +70,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_2",
+          "file": "data/detail-2.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_2",
           "file": "data/text-2.bin"
         },
@@ -67,6 +82,11 @@
           "type": "raw",
           "name": "ART_3",
           "file": "data/art-3.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_3",
+          "file": "data/detail-3.bin"
         },
         {
           "type": "raw",
@@ -80,6 +100,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_4",
+          "file": "data/detail-4.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_4",
           "file": "data/text-4.bin"
         },
@@ -87,6 +112,11 @@
           "type": "raw",
           "name": "ART_5",
           "file": "data/art-5.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_5",
+          "file": "data/detail-5.bin"
         },
         {
           "type": "raw",
@@ -100,6 +130,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_6",
+          "file": "data/detail-6.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_6",
           "file": "data/text-6.bin"
         },
@@ -107,6 +142,11 @@
           "type": "raw",
           "name": "ART_7",
           "file": "data/art-7.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_7",
+          "file": "data/detail-7.bin"
         },
         {
           "type": "raw",
@@ -120,6 +160,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_8",
+          "file": "data/detail-8.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_8",
           "file": "data/text-8.bin"
         },
@@ -127,6 +172,11 @@
           "type": "raw",
           "name": "ART_9",
           "file": "data/art-9.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_9",
+          "file": "data/detail-9.bin"
         },
         {
           "type": "raw",
@@ -140,6 +190,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_10",
+          "file": "data/detail-10.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_10",
           "file": "data/text-10.bin"
         },
@@ -147,6 +202,11 @@
           "type": "raw",
           "name": "ART_11",
           "file": "data/art-11.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_11",
+          "file": "data/detail-11.bin"
         },
         {
           "type": "raw",
@@ -160,6 +220,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_12",
+          "file": "data/detail-12.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_12",
           "file": "data/text-12.bin"
         },
@@ -167,6 +232,11 @@
           "type": "raw",
           "name": "ART_13",
           "file": "data/art-13.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_13",
+          "file": "data/detail-13.bin"
         },
         {
           "type": "raw",
@@ -180,6 +250,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_14",
+          "file": "data/detail-14.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_14",
           "file": "data/text-14.bin"
         },
@@ -187,6 +262,11 @@
           "type": "raw",
           "name": "ART_15",
           "file": "data/art-15.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_15",
+          "file": "data/detail-15.bin"
         },
         {
           "type": "raw",
@@ -200,6 +280,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_16",
+          "file": "data/detail-16.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_16",
           "file": "data/text-16.bin"
         },
@@ -207,6 +292,11 @@
           "type": "raw",
           "name": "ART_17",
           "file": "data/art-17.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_17",
+          "file": "data/detail-17.bin"
         },
         {
           "type": "raw",
@@ -220,6 +310,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_18",
+          "file": "data/detail-18.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_18",
           "file": "data/text-18.bin"
         },
@@ -227,6 +322,11 @@
           "type": "raw",
           "name": "ART_19",
           "file": "data/art-19.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_19",
+          "file": "data/detail-19.bin"
         },
         {
           "type": "raw",
@@ -240,6 +340,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_20",
+          "file": "data/detail-20.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_20",
           "file": "data/text-20.bin"
         },
@@ -247,6 +352,11 @@
           "type": "raw",
           "name": "ART_21",
           "file": "data/art-21.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_21",
+          "file": "data/detail-21.bin"
         },
         {
           "type": "raw",
@@ -260,6 +370,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_22",
+          "file": "data/detail-22.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_22",
           "file": "data/text-22.bin"
         },
@@ -267,6 +382,11 @@
           "type": "raw",
           "name": "ART_23",
           "file": "data/art-23.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_23",
+          "file": "data/detail-23.bin"
         },
         {
           "type": "raw",
@@ -280,6 +400,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_24",
+          "file": "data/detail-24.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_24",
           "file": "data/text-24.bin"
         },
@@ -287,6 +412,11 @@
           "type": "raw",
           "name": "ART_25",
           "file": "data/art-25.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_25",
+          "file": "data/detail-25.bin"
         },
         {
           "type": "raw",
@@ -300,6 +430,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_26",
+          "file": "data/detail-26.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_26",
           "file": "data/text-26.bin"
         },
@@ -307,6 +442,11 @@
           "type": "raw",
           "name": "ART_27",
           "file": "data/art-27.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_27",
+          "file": "data/detail-27.bin"
         },
         {
           "type": "raw",
@@ -320,6 +460,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_28",
+          "file": "data/detail-28.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_28",
           "file": "data/text-28.bin"
         },
@@ -327,6 +472,11 @@
           "type": "raw",
           "name": "ART_29",
           "file": "data/art-29.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_29",
+          "file": "data/detail-29.bin"
         },
         {
           "type": "raw",
@@ -340,6 +490,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_30",
+          "file": "data/detail-30.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_30",
           "file": "data/text-30.bin"
         },
@@ -347,6 +502,11 @@
           "type": "raw",
           "name": "ART_31",
           "file": "data/art-31.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_31",
+          "file": "data/detail-31.bin"
         },
         {
           "type": "raw",
@@ -360,6 +520,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_32",
+          "file": "data/detail-32.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_32",
           "file": "data/text-32.bin"
         },
@@ -367,6 +532,11 @@
           "type": "raw",
           "name": "ART_33",
           "file": "data/art-33.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_33",
+          "file": "data/detail-33.bin"
         },
         {
           "type": "raw",
@@ -380,6 +550,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_34",
+          "file": "data/detail-34.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_34",
           "file": "data/text-34.bin"
         },
@@ -387,6 +562,11 @@
           "type": "raw",
           "name": "ART_35",
           "file": "data/art-35.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_35",
+          "file": "data/detail-35.bin"
         },
         {
           "type": "raw",
@@ -400,6 +580,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_36",
+          "file": "data/detail-36.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_36",
           "file": "data/text-36.bin"
         },
@@ -407,6 +592,11 @@
           "type": "raw",
           "name": "ART_37",
           "file": "data/art-37.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_37",
+          "file": "data/detail-37.bin"
         },
         {
           "type": "raw",
@@ -420,6 +610,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_38",
+          "file": "data/detail-38.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_38",
           "file": "data/text-38.bin"
         },
@@ -427,6 +622,11 @@
           "type": "raw",
           "name": "ART_39",
           "file": "data/art-39.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_39",
+          "file": "data/detail-39.bin"
         },
         {
           "type": "raw",
@@ -440,6 +640,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_40",
+          "file": "data/detail-40.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_40",
           "file": "data/text-40.bin"
         },
@@ -447,6 +652,11 @@
           "type": "raw",
           "name": "ART_41",
           "file": "data/art-41.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_41",
+          "file": "data/detail-41.bin"
         },
         {
           "type": "raw",
@@ -460,6 +670,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_42",
+          "file": "data/detail-42.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_42",
           "file": "data/text-42.bin"
         },
@@ -467,6 +682,11 @@
           "type": "raw",
           "name": "ART_43",
           "file": "data/art-43.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_43",
+          "file": "data/detail-43.bin"
         },
         {
           "type": "raw",
@@ -480,6 +700,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_44",
+          "file": "data/detail-44.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_44",
           "file": "data/text-44.bin"
         },
@@ -487,6 +712,11 @@
           "type": "raw",
           "name": "ART_45",
           "file": "data/art-45.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_45",
+          "file": "data/detail-45.bin"
         },
         {
           "type": "raw",
@@ -500,6 +730,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_46",
+          "file": "data/detail-46.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_46",
           "file": "data/text-46.bin"
         },
@@ -507,6 +742,11 @@
           "type": "raw",
           "name": "ART_47",
           "file": "data/art-47.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_47",
+          "file": "data/detail-47.bin"
         },
         {
           "type": "raw",
@@ -520,6 +760,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_48",
+          "file": "data/detail-48.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_48",
           "file": "data/text-48.bin"
         },
@@ -527,6 +772,11 @@
           "type": "raw",
           "name": "ART_49",
           "file": "data/art-49.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_49",
+          "file": "data/detail-49.bin"
         },
         {
           "type": "raw",
@@ -540,6 +790,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_50",
+          "file": "data/detail-50.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_50",
           "file": "data/text-50.bin"
         },
@@ -547,6 +802,11 @@
           "type": "raw",
           "name": "ART_51",
           "file": "data/art-51.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_51",
+          "file": "data/detail-51.bin"
         },
         {
           "type": "raw",
@@ -560,6 +820,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_52",
+          "file": "data/detail-52.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_52",
           "file": "data/text-52.bin"
         },
@@ -567,6 +832,11 @@
           "type": "raw",
           "name": "ART_53",
           "file": "data/art-53.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_53",
+          "file": "data/detail-53.bin"
         },
         {
           "type": "raw",
@@ -580,6 +850,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_54",
+          "file": "data/detail-54.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_54",
           "file": "data/text-54.bin"
         },
@@ -587,6 +862,11 @@
           "type": "raw",
           "name": "ART_55",
           "file": "data/art-55.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_55",
+          "file": "data/detail-55.bin"
         },
         {
           "type": "raw",
@@ -600,6 +880,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_56",
+          "file": "data/detail-56.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_56",
           "file": "data/text-56.bin"
         },
@@ -607,6 +892,11 @@
           "type": "raw",
           "name": "ART_57",
           "file": "data/art-57.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_57",
+          "file": "data/detail-57.bin"
         },
         {
           "type": "raw",
@@ -620,6 +910,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_58",
+          "file": "data/detail-58.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_58",
           "file": "data/text-58.bin"
         },
@@ -627,6 +922,11 @@
           "type": "raw",
           "name": "ART_59",
           "file": "data/art-59.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_59",
+          "file": "data/detail-59.bin"
         },
         {
           "type": "raw",
@@ -640,6 +940,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_60",
+          "file": "data/detail-60.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_60",
           "file": "data/text-60.bin"
         },
@@ -647,6 +952,11 @@
           "type": "raw",
           "name": "ART_61",
           "file": "data/art-61.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_61",
+          "file": "data/detail-61.bin"
         },
         {
           "type": "raw",
@@ -660,6 +970,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_62",
+          "file": "data/detail-62.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_62",
           "file": "data/text-62.bin"
         },
@@ -667,6 +982,11 @@
           "type": "raw",
           "name": "ART_63",
           "file": "data/art-63.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_63",
+          "file": "data/detail-63.bin"
         },
         {
           "type": "raw",
@@ -680,6 +1000,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_64",
+          "file": "data/detail-64.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_64",
           "file": "data/text-64.bin"
         },
@@ -687,6 +1012,11 @@
           "type": "raw",
           "name": "ART_65",
           "file": "data/art-65.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_65",
+          "file": "data/detail-65.bin"
         },
         {
           "type": "raw",
@@ -700,6 +1030,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_66",
+          "file": "data/detail-66.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_66",
           "file": "data/text-66.bin"
         },
@@ -707,6 +1042,11 @@
           "type": "raw",
           "name": "ART_67",
           "file": "data/art-67.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_67",
+          "file": "data/detail-67.bin"
         },
         {
           "type": "raw",
@@ -720,6 +1060,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_68",
+          "file": "data/detail-68.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_68",
           "file": "data/text-68.bin"
         },
@@ -727,6 +1072,11 @@
           "type": "raw",
           "name": "ART_69",
           "file": "data/art-69.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_69",
+          "file": "data/detail-69.bin"
         },
         {
           "type": "raw",
@@ -740,6 +1090,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_70",
+          "file": "data/detail-70.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_70",
           "file": "data/text-70.bin"
         },
@@ -747,6 +1102,11 @@
           "type": "raw",
           "name": "ART_71",
           "file": "data/art-71.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_71",
+          "file": "data/detail-71.bin"
         },
         {
           "type": "raw",
@@ -760,6 +1120,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_72",
+          "file": "data/detail-72.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_72",
           "file": "data/text-72.bin"
         },
@@ -767,6 +1132,11 @@
           "type": "raw",
           "name": "ART_73",
           "file": "data/art-73.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_73",
+          "file": "data/detail-73.bin"
         },
         {
           "type": "raw",
@@ -780,6 +1150,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_74",
+          "file": "data/detail-74.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_74",
           "file": "data/text-74.bin"
         },
@@ -787,6 +1162,11 @@
           "type": "raw",
           "name": "ART_75",
           "file": "data/art-75.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_75",
+          "file": "data/detail-75.bin"
         },
         {
           "type": "raw",
@@ -800,6 +1180,11 @@
         },
         {
           "type": "raw",
+          "name": "DETAIL_76",
+          "file": "data/detail-76.bin"
+        },
+        {
+          "type": "raw",
           "name": "TEXT_76",
           "file": "data/text-76.bin"
         },
@@ -807,6 +1192,11 @@
           "type": "raw",
           "name": "ART_77",
           "file": "data/art-77.bin"
+        },
+        {
+          "type": "raw",
+          "name": "DETAIL_77",
+          "file": "data/detail-77.bin"
         },
         {
           "type": "raw",

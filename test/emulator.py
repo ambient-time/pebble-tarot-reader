@@ -21,7 +21,7 @@ os.environ.setdefault('PEBBLE_QEMU_PATH',toolchain+'/qemu-pebble')
 os.environ['PATH']=toolchain+os.pathsep+os.environ['PATH']
 import png
 from pebble_tool.commands.screenshot import ScreenshotCommand
-from pebble_tool.commands.install import ToolAppInstaller
+from libpebble2.services.install import AppInstaller
 from libpebble2.protocol.apps import AppRunState,AppRunStateStart,AppRunStateStop
 from libpebble2.protocol.logs import AppLogMessage,AppLogShippingControl
 import pebble_tool.sdk.emulator as emulator
@@ -73,10 +73,10 @@ def run(platform,fresh=False):
             if 'Tarot screen=' in line:
                 return {k:int(v) for k,v in re.findall(r'(screen|menu|count|selected|revealed|card|reverse)=(\d+)',line)}
         raise AssertionError('No native state log')
-    def button(name):
+    def button(name,hold=.08):
         previous=sum('Tarot screen=' in line for line in logs)
         send_data_to_qemu(watch.transport,QemuButton(state=getattr(QemuButton.Button,name)))
-        time.sleep(.08);send_data_to_qemu(watch.transport,QemuButton(state=0))
+        time.sleep(hold);send_data_to_qemu(watch.transport,QemuButton(state=0))
         deadline=time.monotonic()+4
         if previous:
             while sum('Tarot screen=' in line for line in logs)==previous and time.monotonic()<deadline:time.sleep(.03)
@@ -87,7 +87,14 @@ def run(platform,fresh=False):
         assert all(actual[k]==v for k,v in values.items()),(values,actual)
     try:
         time.sleep(4);button('Back')
-        ToolAppInstaller(watch,str(PBW),quiet=True).install()
+        # Pace the host-side transfer; large resource packets can overrun QEMU's UART.
+        send_packet=watch.send_packet
+        def paced(packet):
+            time.sleep(.006)
+            return send_packet(packet)
+        watch.send_packet=paced
+        try: AppInstaller(watch,str(PBW)).install()
+        finally: watch.send_packet=send_packet
         watch.send_packet(AppRunState(data=AppRunStateStart(uuid=APP)));time.sleep(1)
         expect(screen=0,menu=1);grab('menu')
         button('Down');button('Down');expect(menu=3)
@@ -95,6 +102,13 @@ def run(platform,fresh=False):
         button('Select');expect(screen=2);grab('card-back')
         button('Select');expect(screen=2,revealed=1);card=current();hero=grab('card')
         time.sleep(.7);assert grab('card-idle')==hero,'Idle card changed'
+        button('Select',.8);expect(screen=5);detail=grab('detail')
+        for _ in range(8):button('Down')
+        bottom=grab('detail-bottom');assert bottom!=detail
+        button('Down');assert grab('detail-bottom-clamped')==bottom
+        for _ in range(8):button('Up')
+        assert grab('detail-top-return')==detail
+        button('Back');expect(screen=2);assert grab('detail-return')==hero
         button('Select');expect(screen=3);before=grab('meaning')
         for _ in range(3):button('Down')
         assert grab('meaning-scrolled')!=before,'Meaning does not scroll'
@@ -114,11 +128,12 @@ def run(platform,fresh=False):
         for i in range(5):
             button('Select');expect(screen=2,reverse=0);button('Select');button('Back');button('Down')
         expect(revealed=31);grab('open-table-revealed')
-        button('Back');button('Down');expect(menu=1);button('Select');expect(count=1,screen=1)
+        button('Back');button('Down');expect(menu=1);button('Select');expect(count=1,screen=2)
+        button('Select');expect(screen=2,revealed=1);grab('one-card')
         button('Back');button('Down');button('Down');expect(menu=2);button('Select');expect(count=3,screen=1);grab('three-cards')
         assert hashlib.sha256(PBW.read_bytes()).hexdigest()==installed_sha
         assert not any(any(term in l.lower() for term in ['crash','fault','could not','unavailable']) for l in logs)
-        report={'platform':platform,'pbwSHA256':installed_sha,'capturedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'passed':True,'checks':['Celtic Cross','reveal','meaning scroll','Back navigation','static idle','reading persistence','reversals off','open table','one card','three cards'],'frames':frames,'logs':logs,'limits':'Native emulator only. Physical-watch readability remains untested.'}
+        report={'platform':platform,'pbwSHA256':installed_sha,'capturedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'passed':True,'checks':['Celtic Cross','reveal','meaning scroll','Back navigation','static idle','reading persistence','reversals off','open table','one card','three cards','enlarged art','pan limits','detail Back restores card','single card skips overview'],'frames':frames,'logs':logs,'limits':'Native emulator only. Physical-watch readability remains untested.'}
         (out/f'{platform}-report.json').write_text(json.dumps(report,indent=2)+'\n');print('PASS',platform,flush=True)
     finally:
         watch.unregister_endpoint(handle);cmd._close_pebble_connection(watch);cmd.pebble=None;shutdown();bridge_log.close()

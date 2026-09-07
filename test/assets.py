@@ -13,8 +13,8 @@ for name,sha in sources['localArtSHA256'].items():
 for i,card in enumerate(cards):
     text=(root/f'resources/data/text-{i}.bin').read_bytes().split(b'\0')
     assert text==[card['meaning_up'].encode(),card['meaning_rev'].encode(),b'']
-    for suffix,size in [('',(72,116)),('~emery',(104,168)),('~gabbro',(104,168))]:
-        b=(root/f'resources/data/art-{i}{suffix}.bin').read_bytes()
+    for kind,suffix,size in [('art','',(72,116)),('art','~chalk',(64,104)),('art','~emery',(104,168)),('art','~gabbro',(104,168)),('detail','',(128,208)),('detail','~emery',(184,296)),('detail','~gabbro',(184,296))]:
+        b=(root/f'resources/data/{kind}-{i}{suffix}.bin').read_bytes()
         assert struct.unpack('<HH',b[:4])==size
         assert len(b)==4+size[0]*size[1]//8
         assert len(set(b[4:]))>10
@@ -24,4 +24,4 @@ with zipfile.ZipFile(root/'build/tarot-reader.pbw') as z:
     for platform in package['pebble']['targetPlatforms']:
         assert f'{platform}/pebble-app.bin' in z.namelist()
         assert f'{platform}/app_resources.pbpack' in z.namelist()
-print('PASS: 78 source hashes, 156 exact text fields, 234 bitmaps, six packaged native targets')
+print('PASS: 78 source hashes, 156 exact text fields, 546 bitmaps, six packaged native targets')

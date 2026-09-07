@@ -11,12 +11,17 @@ reads their positions as past, present, or emerging influences, with visible
 influences above and quieter ones below.
 
 Up and Down move between cards. Select opens a card, reveals it, then opens its
-meaning. Up and Down scroll the text; Back returns one step. A filled dot marks
+meaning. A single-card draw goes straight to the card. Hold Select on revealed
+artwork to enlarge it; Up and Down pan the image, and Back restores the full
+card. Select also opens the meaning from the enlarged view. Up and Down scroll
+the text; Back returns one step. A filled dot marks
 a revealed card in the overview. The current selection has a light background.
+Menus use larger, bold type. Meanings appear as black text on a white page;
+color is limited to the brass card borders on color watches.
 Hold Back to leave the app.
 
 The last reading stays on the watch, including its revealed cards and their
-orientations. Choose **Continue reading** to return. A new draw replaces that
+orientations. Choose **Continue** to return. A new draw replaces that
 reading. Turn reversals off in the menu to make future draws upright only.
 
 Meanings quote Waite's historical text, including its dated language. The spread
@@ -66,6 +71,9 @@ The draw uses a seeded Fisher–Yates shuffle without replacement. Celtic Cross
 preserves the web example's 28% reversal chance; other spreads use 50%. Draws are
 pseudorandom. The same seed reproduces a reading for testing.
 
-See [evidence/validation.json](evidence/validation.json) for the tested binary,
+The original 0.1.0 menu was installed and captured on a Time 2.
+The 0.2.0 readability changes are covered in [the review](reference/readability-review.md).
+
+See [evidence/readability-v0.2/validation.json](evidence/readability-v0.2/validation.json) for the tested binary,
 native targets, and screenshots. Emulator checks do not establish physical-watch
 readability or battery performance.
