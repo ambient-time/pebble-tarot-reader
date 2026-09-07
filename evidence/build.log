@@ -1,0 +1,84 @@
+Setting top to                           : /Users/luke/workspace/ambient-time/appstores/pebble/tarot-reader
+Setting out to                           : /Users/luke/workspace/ambient-time/appstores/pebble/tarot-reader/build
+Checking for program 'webpack'           : /Users/luke/Library/Application Support/Pebble SDK/SDKs/current/node_modules/.bin/webpack
+WARNING: enableMultiJS is not enabled for this project. message_keys.json will not be included in your project unless you add it to your pebble-js-app.js file.
+Found Pebble SDK for gabbro in:          : /Users/luke/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/gabbro
+Checking for program 'gcc, cc'           : arm-none-eabi-gcc
+Checking for program 'ar'                : arm-none-eabi-ar
+Found Pebble SDK for flint in:           : /Users/luke/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/flint
+Checking for program 'gcc, cc'           : arm-none-eabi-gcc
+Checking for program 'ar'                : arm-none-eabi-ar
+Found Pebble SDK for emery in:           : /Users/luke/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/emery
+Checking for program 'gcc, cc'           : arm-none-eabi-gcc
+Checking for program 'ar'                : arm-none-eabi-ar
+Found Pebble SDK for diorite in:         : /Users/luke/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/diorite
+Checking for program 'gcc, cc'           : arm-none-eabi-gcc
+Checking for program 'ar'                : arm-none-eabi-ar
+Found Pebble SDK for chalk in:           : /Users/luke/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk
+Checking for program 'gcc, cc'           : arm-none-eabi-gcc
+Checking for program 'ar'                : arm-none-eabi-ar
+Found Pebble SDK for basalt in:          : /Users/luke/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/basalt
+Checking for program 'gcc, cc'           : arm-none-eabi-gcc
+Checking for program 'ar'                : arm-none-eabi-ar
+'configure' finished successfully (0.299s)
+Waf: Entering directory `/Users/luke/workspace/ambient-time/appstores/pebble/tarot-reader/build'
+[168/171] Compiling gabbro | c: src/c/main.c -> build/src/c/main.c.44.o
+[170/171] Linking gabbro | cprogram: build/src/c/main.c.44.o build/src/c/reading.c.44.o build/gabbro/appinfo.auto.c.44.o build/gabbro/src/resource_ids.auto.c.44.o -> build/gabbro/pebble-app.elf
+/Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /Users/luke/workspace/ambient-time/appstores/pebble/tarot-reader/build/gabbro/pebble-app.elf has a LOAD segment with RWX permissions
+
+[171/171] Processing gabbro | memory_usage_report: build/gabbro/pebble-app.elf build/gabbro/app_resources.pbpack
+-------------------------------------------------------
+GABBRO APP MEMORY USAGE
+Total size of resources:        193762 bytes / 256.0KB
+Total footprint in RAM:         14555 bytes / 128.0KB
+Free RAM available (heap):      116517 bytes
+-------------------------------------------------------
+[338/341] Compiling flint | c: src/c/main.c -> build/src/c/main.c.45.o
+[508/511] Compiling emery | c: src/c/main.c -> build/src/c/main.c.46.o
+[510/511] Linking emery | cprogram: build/src/c/main.c.46.o build/src/c/reading.c.46.o build/emery/appinfo.auto.c.46.o build/emery/src/resource_ids.auto.c.46.o -> build/emery/pebble-app.elf
+/Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /Users/luke/workspace/ambient-time/appstores/pebble/tarot-reader/build/emery/pebble-app.elf has a LOAD segment with RWX permissions
+
+[511/511] Processing emery | memory_usage_report: build/emery/pebble-app.elf build/emery/app_resources.pbpack
+-------------------------------------------------------
+EMERY APP MEMORY USAGE
+Total size of resources:        193762 bytes / 256.0KB
+Total footprint in RAM:         14551 bytes / 128.0KB
+Free RAM available (heap):      116521 bytes
+-------------------------------------------------------
+[678/681] Compiling diorite | c: src/c/main.c -> build/src/c/main.c.47.o
+[848/851] Compiling chalk | c: src/c/main.c -> build/src/c/main.c.48.o
+[850/851] Linking chalk | cprogram: build/src/c/main.c.48.o build/src/c/reading.c.48.o build/chalk/appinfo.auto.c.48.o build/chalk/src/resource_ids.auto.c.48.o -> build/chalk/pebble-app.elf
+/Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /Users/luke/workspace/ambient-time/appstores/pebble/tarot-reader/build/chalk/pebble-app.elf has a LOAD segment with RWX permissions
+
+[851/851] Processing chalk | memory_usage_report: build/chalk/pebble-app.elf build/chalk/app_resources.pbpack
+-------------------------------------------------------
+CHALK APP MEMORY USAGE
+Total size of resources:        104842 bytes / 256.0KB
+Total footprint in RAM:         14555 bytes / 64.0KB
+Free RAM available (heap):      50981 bytes
+-------------------------------------------------------
+[1018/1021] Compiling basalt | c: src/c/main.c -> build/src/c/main.c.49.o
+[1020/1021] Linking basalt | cprogram: build/src/c/main.c.49.o build/src/c/reading.c.49.o build/basalt/appinfo.auto.c.49.o build/basalt/src/resource_ids.auto.c.49.o -> build/basalt/pebble-app.elf
+/Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /Users/luke/workspace/ambient-time/appstores/pebble/tarot-reader/build/basalt/pebble-app.elf has a LOAD segment with RWX permissions
+
+[1021/1021] Processing basalt | memory_usage_report: build/basalt/pebble-app.elf build/basalt/app_resources.pbpack
+-------------------------------------------------------
+BASALT APP MEMORY USAGE
+Total size of resources:        104842 bytes / 256.0KB
+Total footprint in RAM:         14551 bytes / 64.0KB
+Free RAM available (heap):      50985 bytes
+-------------------------------------------------------
+[1022/1034] Compiling gabbro | /Users/luke/workspace/ambient-time/appstores/pebble/tarot-reader/build/gabbro/pebble-app.raw.bin: build/gabbro/pebble-app.elf -> build/gabbro/pebble-app.raw.bin
+[1025/1034] Compiling emery | /Users/luke/workspace/ambient-time/appstores/pebble/tarot-reader/build/emery/pebble-app.raw.bin: build/emery/pebble-app.elf -> build/emery/pebble-app.raw.bin
+[1026/1034] Compiling chalk | /Users/luke/workspace/ambient-time/appstores/pebble/tarot-reader/build/chalk/pebble-app.raw.bin: build/chalk/pebble-app.elf -> build/chalk/pebble-app.raw.bin
+[1027/1034] Compiling basalt | /Users/luke/workspace/ambient-time/appstores/pebble/tarot-reader/build/basalt/pebble-app.raw.bin: build/basalt/pebble-app.elf -> build/basalt/pebble-app.raw.bin
+[1030/1034] Processing chalk | inject-metadata: build/chalk/pebble-app.raw.bin build/chalk/pebble-app.elf build/chalk/app_resources.pbpack -> build/chalk/pebble-app.bin
+[1031/1034] Processing gabbro | inject-metadata: build/gabbro/pebble-app.raw.bin build/gabbro/pebble-app.elf build/gabbro/app_resources.pbpack -> build/gabbro/pebble-app.bin
+[1032/1034] Processing emery | inject-metadata: build/emery/pebble-app.raw.bin build/emery/pebble-app.elf build/emery/app_resources.pbpack -> build/emery/pebble-app.bin
+[1033/1034] Processing basalt | inject-metadata: build/basalt/pebble-app.raw.bin build/basalt/pebble-app.elf build/basalt/app_resources.pbpack -> build/basalt/pebble-app.bin
+[1034/1034] Creating app_bundle:  -> build/tarot-reader.pbw
+Waf: Leaving directory `/Users/luke/workspace/ambient-time/appstores/pebble/tarot-reader/build'
+'build' finished successfully (2.289s)
+
+[1m[33mA new pebble-tool is available: v5.0.40 (current: v5.0.39)[0m
+[33m  Update with: uv tool upgrade pebble-tool[0m

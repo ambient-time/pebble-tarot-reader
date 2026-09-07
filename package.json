@@ -1,0 +1,819 @@
+{
+  "name": "tarot-reader",
+  "author": "Luke Steuber",
+  "version": "0.1.0",
+  "private": true,
+  "keywords": [
+    "pebble-app"
+  ],
+  "dependencies": {},
+  "pebble": {
+    "displayName": "Tarot Reader",
+    "companyName": "Luke Steuber",
+    "uuid": "19d390ad-7bc8-467b-8e3a-b3552f1906e9",
+    "sdkVersion": "3",
+    "enableMultiJS": false,
+    "targetPlatforms": [
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint",
+      "gabbro"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "IMAGE_MENU_ICON",
+          "file": "data/menu-icon.png",
+          "menuIcon": true
+        },
+        {
+          "type": "raw",
+          "name": "ART_0",
+          "file": "data/art-0.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_0",
+          "file": "data/text-0.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_1",
+          "file": "data/art-1.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_1",
+          "file": "data/text-1.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_2",
+          "file": "data/art-2.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_2",
+          "file": "data/text-2.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_3",
+          "file": "data/art-3.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_3",
+          "file": "data/text-3.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_4",
+          "file": "data/art-4.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_4",
+          "file": "data/text-4.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_5",
+          "file": "data/art-5.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_5",
+          "file": "data/text-5.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_6",
+          "file": "data/art-6.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_6",
+          "file": "data/text-6.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_7",
+          "file": "data/art-7.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_7",
+          "file": "data/text-7.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_8",
+          "file": "data/art-8.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_8",
+          "file": "data/text-8.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_9",
+          "file": "data/art-9.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_9",
+          "file": "data/text-9.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_10",
+          "file": "data/art-10.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_10",
+          "file": "data/text-10.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_11",
+          "file": "data/art-11.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_11",
+          "file": "data/text-11.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_12",
+          "file": "data/art-12.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_12",
+          "file": "data/text-12.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_13",
+          "file": "data/art-13.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_13",
+          "file": "data/text-13.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_14",
+          "file": "data/art-14.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_14",
+          "file": "data/text-14.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_15",
+          "file": "data/art-15.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_15",
+          "file": "data/text-15.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_16",
+          "file": "data/art-16.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_16",
+          "file": "data/text-16.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_17",
+          "file": "data/art-17.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_17",
+          "file": "data/text-17.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_18",
+          "file": "data/art-18.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_18",
+          "file": "data/text-18.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_19",
+          "file": "data/art-19.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_19",
+          "file": "data/text-19.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_20",
+          "file": "data/art-20.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_20",
+          "file": "data/text-20.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_21",
+          "file": "data/art-21.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_21",
+          "file": "data/text-21.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_22",
+          "file": "data/art-22.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_22",
+          "file": "data/text-22.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_23",
+          "file": "data/art-23.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_23",
+          "file": "data/text-23.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_24",
+          "file": "data/art-24.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_24",
+          "file": "data/text-24.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_25",
+          "file": "data/art-25.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_25",
+          "file": "data/text-25.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_26",
+          "file": "data/art-26.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_26",
+          "file": "data/text-26.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_27",
+          "file": "data/art-27.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_27",
+          "file": "data/text-27.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_28",
+          "file": "data/art-28.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_28",
+          "file": "data/text-28.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_29",
+          "file": "data/art-29.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_29",
+          "file": "data/text-29.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_30",
+          "file": "data/art-30.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_30",
+          "file": "data/text-30.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_31",
+          "file": "data/art-31.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_31",
+          "file": "data/text-31.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_32",
+          "file": "data/art-32.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_32",
+          "file": "data/text-32.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_33",
+          "file": "data/art-33.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_33",
+          "file": "data/text-33.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_34",
+          "file": "data/art-34.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_34",
+          "file": "data/text-34.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_35",
+          "file": "data/art-35.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_35",
+          "file": "data/text-35.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_36",
+          "file": "data/art-36.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_36",
+          "file": "data/text-36.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_37",
+          "file": "data/art-37.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_37",
+          "file": "data/text-37.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_38",
+          "file": "data/art-38.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_38",
+          "file": "data/text-38.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_39",
+          "file": "data/art-39.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_39",
+          "file": "data/text-39.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_40",
+          "file": "data/art-40.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_40",
+          "file": "data/text-40.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_41",
+          "file": "data/art-41.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_41",
+          "file": "data/text-41.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_42",
+          "file": "data/art-42.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_42",
+          "file": "data/text-42.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_43",
+          "file": "data/art-43.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_43",
+          "file": "data/text-43.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_44",
+          "file": "data/art-44.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_44",
+          "file": "data/text-44.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_45",
+          "file": "data/art-45.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_45",
+          "file": "data/text-45.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_46",
+          "file": "data/art-46.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_46",
+          "file": "data/text-46.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_47",
+          "file": "data/art-47.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_47",
+          "file": "data/text-47.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_48",
+          "file": "data/art-48.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_48",
+          "file": "data/text-48.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_49",
+          "file": "data/art-49.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_49",
+          "file": "data/text-49.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_50",
+          "file": "data/art-50.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_50",
+          "file": "data/text-50.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_51",
+          "file": "data/art-51.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_51",
+          "file": "data/text-51.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_52",
+          "file": "data/art-52.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_52",
+          "file": "data/text-52.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_53",
+          "file": "data/art-53.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_53",
+          "file": "data/text-53.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_54",
+          "file": "data/art-54.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_54",
+          "file": "data/text-54.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_55",
+          "file": "data/art-55.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_55",
+          "file": "data/text-55.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_56",
+          "file": "data/art-56.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_56",
+          "file": "data/text-56.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_57",
+          "file": "data/art-57.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_57",
+          "file": "data/text-57.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_58",
+          "file": "data/art-58.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_58",
+          "file": "data/text-58.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_59",
+          "file": "data/art-59.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_59",
+          "file": "data/text-59.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_60",
+          "file": "data/art-60.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_60",
+          "file": "data/text-60.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_61",
+          "file": "data/art-61.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_61",
+          "file": "data/text-61.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_62",
+          "file": "data/art-62.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_62",
+          "file": "data/text-62.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_63",
+          "file": "data/art-63.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_63",
+          "file": "data/text-63.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_64",
+          "file": "data/art-64.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_64",
+          "file": "data/text-64.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_65",
+          "file": "data/art-65.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_65",
+          "file": "data/text-65.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_66",
+          "file": "data/art-66.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_66",
+          "file": "data/text-66.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_67",
+          "file": "data/art-67.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_67",
+          "file": "data/text-67.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_68",
+          "file": "data/art-68.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_68",
+          "file": "data/text-68.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_69",
+          "file": "data/art-69.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_69",
+          "file": "data/text-69.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_70",
+          "file": "data/art-70.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_70",
+          "file": "data/text-70.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_71",
+          "file": "data/art-71.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_71",
+          "file": "data/text-71.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_72",
+          "file": "data/art-72.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_72",
+          "file": "data/text-72.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_73",
+          "file": "data/art-73.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_73",
+          "file": "data/text-73.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_74",
+          "file": "data/art-74.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_74",
+          "file": "data/text-74.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_75",
+          "file": "data/art-75.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_75",
+          "file": "data/text-75.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_76",
+          "file": "data/art-76.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_76",
+          "file": "data/text-76.bin"
+        },
+        {
+          "type": "raw",
+          "name": "ART_77",
+          "file": "data/art-77.bin"
+        },
+        {
+          "type": "raw",
+          "name": "TEXT_77",
+          "file": "data/text-77.bin"
+        }
+      ]
+    }
+  }
+}
