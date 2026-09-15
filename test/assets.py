@@ -20,7 +20,7 @@ for i,card in enumerate(cards):
         assert len(set(b[4:]))>10
 package=json.loads((root/'package.json').read_text())
 assert package['pebble']['watchapp']['watchface'] is False
-with zipfile.ZipFile(root/'build/tarot-reader.pbw') as z:
+with zipfile.ZipFile(root/'build'/f'{root.name}.pbw') as z:
     for platform in package['pebble']['targetPlatforms']:
         assert f'{platform}/pebble-app.bin' in z.namelist()
         assert f'{platform}/app_resources.pbpack' in z.namelist()

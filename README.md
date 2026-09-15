@@ -33,7 +33,7 @@ App and adaptation: Luke Steuber. Illustrations: Pamela Colman Smith. Meanings:
 A. E. Waite, *The Pictorial Key to the Tarot* (1910). The original illustrations
 and text are public domain.
 
-The artwork comes from the [Wikimedia Commons Pictorial Key collection](https://commons.wikimedia.org/wiki/Category:Pictorial_Key_to_the_Tarot),
+The artwork comes from the [Wikimedia Commons Pictorial Key collection](https://commons.wikimedia.org/wiki/Category:The_Pictorial_Key_to_the_Tarot),
 through the local deck at [datapoems.io](https://datapoems.io/clocks/shared/tarot/rws/).
 The text packet uses [ekelen/tarot-api](https://github.com/ekelen/tarot-api).
 The app bundles the packet and never calls that service.
@@ -77,3 +77,9 @@ The 0.2.0 readability changes are covered in [the review](reference/readability-
 See [evidence/readability-v0.2/validation.json](evidence/readability-v0.2/validation.json) for the tested binary,
 native targets, and screenshots. Emulator checks do not establish physical-watch
 readability or battery performance.
+
+## License
+
+Luke Steuber’s application and adaptation code uses the [MIT License](LICENSE).
+The historical artwork and text retain their original attribution; the source
+packet has separate upstream terms. See [Third-party notices](THIRD_PARTY_NOTICES.md).

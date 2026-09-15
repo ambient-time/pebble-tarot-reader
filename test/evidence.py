@@ -7,7 +7,7 @@ from pathlib import Path
 from PIL import Image
 
 root=Path(__file__).resolve().parent.parent
-sha=hashlib.sha256((root/'build/tarot-reader.pbw').read_bytes()).hexdigest()
+sha=hashlib.sha256((root/'build'/f'{root.name}.pbw').read_bytes()).hexdigest()
 targets=json.loads((root/'package.json').read_text())['pebble']['targetPlatforms']
 reverse_count=0
 for platform in targets:
