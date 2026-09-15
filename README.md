@@ -4,6 +4,8 @@ A pocket reading table for Pebble. Draw a card, turn it over, and spend a moment
 with its meaning. The complete 78-card Rider–Waite–Smith deck lives on the watch,
 along with A. E. Waite's upright and reversed meanings. Everything works offline.
 
+[![Get Tarot Reader](https://img.shields.io/badge/Pebble-Get_Tarot_Reader-2563eb?style=flat-square)](https://apps.repebble.com/cadd533080f245c4b7bd8b4a) [![MIT code license](https://img.shields.io/badge/Code-MIT-181717?style=flat-square)](LICENSE) [![Ambient Time collection](https://img.shields.io/badge/Ambient_Time-Collection-181717?style=flat-square)](https://ambient-time.com/watch/pebble/)
+
 Choose a single card, a past/present/emerging three-card spread, the ten-card
 Celtic Cross, or an open table with five, six, or seven cards. The Celtic Cross
 keeps the arrangement from my web reader. Open Table scatters the cards and
@@ -83,3 +85,10 @@ readability or battery performance.
 Luke Steuber’s application and adaptation code uses the [MIT License](LICENSE).
 The historical artwork and text retain their original attribution; the source
 packet has separate upstream terms. See [Third-party notices](THIRD_PARTY_NOTICES.md).
+
+## Around here
+
+[Luke Steuber](https://github.com/lukeslp) · [Data Poems](https://github.com/data-poems) · [Ambient Time](https://github.com/ambient-time) · [Actually Useful AI](https://github.com/actually-useful-ai) · [One Impossible Thing](https://github.com/one-impossible-thing)
+
+Made by [Luke Steuber](https://lukesteuber.com). Questions or collaboration:
+[luke@lukesteuber.com](mailto:luke@lukesteuber.com).
